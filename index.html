@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Enter product details:</h1>
+    <form action="" onsubmit="submitHandler(event)">
+        <label for="price">Selling Price: </label>
+        <input type="text" id="price">
+        <label for="product">Product Name: </label>
+        <input type="text" id="product">
+        <label for="category">Category: </label>
+        <select id="category">
+            <option value="fashion">Fashion</option>
+            <option value="food">Food</option>
+            <option value="electronics">Electronics</option>
+        </select>
+        <button type="submit">Add a Product</button>
+    </form>
+    
+    <div class="section">
+        <h2>Fashion Products</h2>
+        <ul id="fashionList"></ul>
+    </div>
+    <div class="section">
+        <h2>Food Products</h2>
+        <ul id="foodList"></ul>
+    </div>
+    <div class="section">
+        <h2>Electronics Products</h2>
+        <ul id="electronicsList"></ul>
+    </div>
+    <h2 id="totalVal"></h2>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
